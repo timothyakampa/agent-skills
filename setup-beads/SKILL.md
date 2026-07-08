@@ -1,5 +1,5 @@
 ---
-name: setup-beads-local
+name: setup-beads
 description: Install and initialize the Beads (bd) issue tracker for LOCAL-ONLY use in this repo — no sync, no shared-repo changes. Use when onboarding a developer to beads, or when someone asks to "set up beads", "install bd", or wants personal/local AI-agent task tracking without committing beads files or pushing issues to the team git server.
 ---
 
@@ -12,7 +12,7 @@ nothing is committed, nothing is pushed to the shared git server.
 ## Quick start
 
 ```bash
-bash .claude/skills/setup-beads-local/scripts/setup-beads.sh
+bash .claude/skills/setup-beads/scripts/beads-init.sh
 ```
 
 Restart Claude Code afterward so the SessionStart hook loads beads context.

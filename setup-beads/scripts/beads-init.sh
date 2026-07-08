@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# setup-beads.sh — install + initialize Beads (bd) for LOCAL-ONLY use.
+# beads-init.sh — install + initialize Beads (bd) for LOCAL-ONLY use.
 #
 # What it guarantees:
 #   • No changes to any git-tracked or shared file (.gitignore is restored,
@@ -8,8 +8,8 @@
 #   • No Beads sync: the Dolt remote is unset, so issues never leave your machine.
 #   • Idempotent: safe to re-run; skips work that's already done.
 #
-# Usage:  bash scripts/setup-beads.sh [prefix]
-#   prefix defaults to "mbb" (override with arg or BEADS_PREFIX env var).
+# Usage:  bash scripts/beads-init.sh [prefix]
+#   prefix defaults to "bead" (override with arg or BEADS_PREFIX env var).
 #
 # This is a LOCAL developer-tool setup on a non-production machine. Review it
 # before running (org policy: treat AI-generated scripts as untrusted, run in
@@ -17,7 +17,7 @@
 
 set -euo pipefail
 
-PREFIX="${1:-${BEADS_PREFIX:-mbb}}"
+PREFIX="${1:-${BEADS_PREFIX:-bead}}"
 
 # --- run from the repo root ---------------------------------------------------
 ROOT="$(git rev-parse --show-toplevel 2>/dev/null || true)"

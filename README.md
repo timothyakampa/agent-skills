@@ -27,7 +27,7 @@ Use when you want to:
 
 See [capability-model/SKILL.md](capability-model/SKILL.md) for the full rulebook.
 
-### setup-beads-local
+### setup-beads
 
 Install and initialize the [Beads](https://github.com/steveyegge/beads) (`bd`) issue tracker for **local-only** use in a shared repo — a personal task tracker for your AI-agent workflow with no sync, no committed files, and nothing pushed to the team git server.
 
@@ -37,7 +37,7 @@ Use when you want to:
 - *"Give me local AI-agent task tracking"*
 - *"Onboard me to beads without touching the shared repo"*
 
-See [setup-beads-local/SKILL.md](setup-beads-local/SKILL.md) for the full details.
+See [setup-beads/SKILL.md](setup-beads/SKILL.md) for the full details.
 
 ## License
 
