@@ -16,7 +16,7 @@ bash .claude/skills/setup-beads/scripts/beads-init.sh
 ```
 
 Restart Claude Code afterward so the SessionStart hook loads beads context.
-Default issue prefix is `mbb` (override via an arg or `BEADS_PREFIX`).
+Default issue prefix is `bead` (override via an arg or `BEADS_PREFIX`).
 
 > Per org policy, review the script before running. It is idempotent — safe to re-run.
 
@@ -56,7 +56,7 @@ investigate before committing.
 
 ```bash
 cp .gitignore /tmp/gi.bak                                              # preserve tracked .gitignore
-bd init --prefix mbb --setup-exclude --skip-hooks --skip-agents --non-interactive
+bd init --prefix bead --setup-exclude --skip-hooks --skip-agents --non-interactive
 cp /tmp/gi.bak .gitignore                                             # drop bd's appended Dolt patterns
 bd config unset sync.remote                                          # no push to shared server
 # add the SessionStart hook to .claude/settings.local.json (personal, gitignored):
